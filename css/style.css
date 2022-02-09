@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+a:hover{
+    background: rgba(0, 0, 0, .05);
+}
+label.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+
+}
+#header{
+    /*box-sizing: border-box;*/
+    height: 80px;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #99a8bed7;
+}
+
+#menu{
+    display: flex;
+    gap: .6rem;
+    position: absolute; /*Será que preciso tirar esse ?*/
+    /*width: 100%;*/
+    top: 80px;
+    height: calc (100vh-90px); /*colocou o menu na tela toda só com os 100vh. com o calc ele tira 70px*/
+   /* right: 0px; */ /*colocou o menu em baixo do logo*/
+    background: #99a8bed7;
+   /* display: block;*/
+
+    
+}
+
+#menu a{
+    display: block; /*usado para aumentar a area de contato*/
+    padding: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+#btn{
+display: flex;
+
+}
+
+
+
+
+/* 
+NÃO  adicionei um MEDIA QUERIES.
+Ele torna os estilos da tela responsivo 
+
+No vídeo, ele colocou o <#menu>  dentro do media:
+#media{
+    display:none;
+}
+
+btnMenu{
+ display:none; para esconder botão
+}
+
+*/
